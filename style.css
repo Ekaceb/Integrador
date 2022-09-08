@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+:root{
+    --clr1: #DAD7CD;
+    --clr2: #A3B18A;
+    --clr3: #588157;
+    --clr4: #3A5A40;
+    --clr5: #344E41;
+    --clr6: black;
+    --clr7: #a7ebc9;
+    --clr8: #59a68c; 
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+   max-width: 1200px;
+   background-color: rgb(250, 241, 225);
+  
+}
+.contenedor-link{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    gap: 50px;
+    background: var(--clr7);
+    margin: 0 100px 0 155px;
+    margin-top: 110px;
+}
+a{
+    color: white;
+    font-size: 30px;
+    }
+
+.bodyLogin{
+   margin: 70px auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.loginSection {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./fondologinregistro.webp);
+    background-repeat: no-repeat;  
+    background-size: 100%;
+    border-radius: 15%;
+    
+    
+}
+
+.login {
+    
+  /*  width: 30rem;
+    height: 40rem;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  
+    
+}
+
+
+.formLogin {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+}
+
+.formLogin a {
+    color: black;
+}
+.textLogin{
+    color: var(--clr6);
+    font-size: 40px;
+    
+}
+
+.loginSection hr{
+  /*  border:none;*/
+    height: 10px;
+    background-color: black;
+}
+/*.Password{
+    color:black;
+}*/
+
+.loginRecuerdame{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30%;
+}
+.loginCheckbox{
+    width: 4rem;
+    height: 5rem;
+    
+}
+
+input {
+    width: 25rem;
+    height: 5rem;
+    display: flex;
+    background: none;
+    outline: 0px;
+    color: var(--clr6);
+    font-size: 25px;    
+    text-align: center;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+
+    border: none;
+}
+.formLogin :nth-child(3) {
+    color: white;
+    text-decoration: none;
+}
+.button {
+    margin: 10px;
+    width: 15rem;
+    padding: 15px;
+    margin-top: 50px;
+    font-size: 25px;
+    background-color: var(--clr7);
+    border-radius: 20px;
+    border-bottom: 1px solid var(--color4);
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button{
+    background-color: var(--clr7);
+    border: 0px;
+    outline: none;
+    width: 180px;
+    height: 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition : all 0,3s linear;
+    border-radius: 25px;
+}
+
+button:hover{
+    background-color: rgb(85, 203, 120);
+    transition : all 0,3s linear;
+    opacity: 10;
+}
+
+.section-title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+
+header{    
+    width: 100%;
+    height: 110px;
+    z-index: 1;
+    background-color: white;  
+    position: fixed;
+    top: 0;
+   }
+
+.header-container{
+    max-width: 1200px;
+    height: 100%;
+    margin-top: 110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+     
+}
+.logo-container{
+   
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo-container img{
+    width: 160px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar i {
+    font-size: 36px;
+    display: none;
+}
+
+.navbar, .navbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.navbar-list{
+    gap: 40px;
+}
+
+.navbar a{
+    font-size: 30px;
+    color: black;
+}
+
+.navbar-list li:last-child > a{
+    border: 1px solid white;
+    font-size: 20px;
+    padding: 8px 30px;
+    border-radius: 50px;
+    transition : all 0,3s linear;
+
+}
+
+.navbar-list li:hover{
+    opacity: 0.8;
+}
+.navbar-list li:last-child > a:hover{
+    background-color: var(--clr8);
+    color: var(--clr4);
+    transition : all 0,3s linear;
+    font-weight: 800;
+    opacity: 10;
+}
+
+nav img{
+      display: none;
+}
+
+#toogle-menu{
+    display: none;
+    
+}
+.section-carrusel{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  /*  margin: 0 auto;*/
+    padding: 15px 0px ;
+    width: 95%;
+    
+   }
+.itemCarrusel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    height: 100%;
+    position: relative;
+    
+}
+
+.cardCarrusel{    
+    width: 50%;
+    height: 50%;       
+}
+
+.flechaCarrusel{    
+    height: 90%;
+    width: 60%;
+    position: absolute;
+    border-radius: 10%;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;   
+}
+
+#containerItemsCarrusel{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.imgcarrusel{
+    width: 700px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    list-style: none;
+    padding: 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: filter .2s, -webkit-filter .2s;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+i{
+    color: var(--clr8);
+}
+
+.title-container{
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%);
+ 
+}
+
+#productos-card{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.section-container-card{
+    display: flex;
+    justify-content: space-around;
+    gap: 25%;
+    width: 100%;
+}
+
+
+.productos-card-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   /* margin-top: 100px;*/      
+    gap: 70px;
+  /*  height: 100vh;*/
+    
+}
+
+
+.productos-card{
+    width: 300px;
+    height: 350px;
+    background-color: var(--clr8);
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    bottom: -80px;
+    transition: all 0.4s;
+}
+
+.productos-card:hover{
+    transform: translateY(-1rem);
+                                                                          
+}
+
+.productos-card-img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 15px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0.7, 0, 0, 0.7));
+    transition: all 400ms;
+    overflow: hidden; 
+  
+    }
+
+.productos-card:hover img{
+    top: 0px;
+} 
+   
+.card-content{
+    margin-top: -10px;
+    padding: 20px;  
+
+}
+.card-content p{
+    margin-top: 10px;
+    color:rgb(250, 241, 225);   
+
+}
+
+
+.productos-card span{
+    font-weight: 700;
+}
+
+.nosotros{
+    max-width: 1200px;
+    background: var(--clr7);
+    border-radius: 20px;
+    margin: 35px;
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 30px;
+    font-size: 20px;
+    
+}
+
+.nosotros img{
+    width: 200px;
+   border-radius: 20%;
+
+}
+
+
+.formulario-contacto-container {
+    max-width: 1200px;
+    margin: 0 400px 0 400px;
+    
+}
+.formulario-contacto{    
+    width: 100%;
+    background-image: url(./fondologinregistro.webp);
+    background-repeat: no-repeat;  
+    background-size: 100%;
+    flex-direction: column;
+    border-radius: 20px;
+    font-size: 35px;
+    font-style: 3em;
+    
+    
+}
+
+.formularioContacto{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+textarea{
+    min-width: 300px;
+    min-height: 120px;
+   max-width: 1400px;
+   max-height: 120px;
+  font-size: 25px;
+   border-radius: 25px;
+   
+   
+
+}
+.btn-form{    
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: var(--clr7);
+    border-radius: 25px;
+    border-bottom: 1px solid var(--color4);
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+
+  
+   
+}
+
+.btn-form:hover{
+    background-color: rgb(85, 203, 120);
+    transition : all 0,3s linear;
+    opacity: 10;
+}
+.botom-container-formulario{
+    padding-bottom: 20px;
+}
+footer{
+    width: 100%;
+    padding: 50px, 0;
+    background-image: url(./Fondofooter.jpg);
+    background-size: cover;
+   
+}
+
+.container-footer{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto   ;
+    margin-top: 100px;
+}
+
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+}
+.box-footer img{
+    width: 250px;
+}
+
+.box-footer .terminoscondiciones-footer{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: black;
+    font-size: 18px;
+}
+
+.box-footer a{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+
+.box-footer a:hover{
+    opacity: 0.8;
+}
+
+
+.box-footer h2{
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.box-footer a .fab{
+    font-size: 20px;
+}
+
+.box-copyrigth{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+.box-copyrigth p{
+    margin-top: 20px;
+    color: black;
+    }
+
+.box-copyrigth br{
+    border:none;
+    height: 1px;
+    background-color: black;
+}
+/*Media*/
+ 
+@media  (max-width: 992px){
+
+  
+    .nosotros{
+        font-size: 10px;
+    }
+    .nosotros img{
+        width: 100px;
+    }
+
+.formularioContacto {
+
+    margin: 0 300px 0 300px;
+    background-size: 100%;
+    flex-direction: column;
+    border-radius: 20px;
+    font-size: 20px;
+   
+}
+input {
+    width: 150px;
+    height: 20px;
+    display: flex;
+    letter-spacing: normal;
+    line-height: normal;
+    font-size: 10px;
+   
+}
+textarea{
+    min-width: 50px;
+    min-height: 30px; 
+   }
+  
+button{
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+}
+.button {
+    margin: 10px;
+    width: 80px;
+    padding: 5px;
+    font-size: 10px;
+      
+}
+
+#containerItemsCarrusel{
+    width: 60%;
+    height: 250px;
+    overflow: hidden;
+}/*
+.imgcarrusel{
+    width: 550px;
+    height: 60%;
+}
+.productos-card{
+    width: 100px;
+    height: 70px;
+    
+}
+
+.productos-card-img{
+    width: 50px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 5px;
+    z-index: 1;    
+  
+    }
+   
+}
+/*
+} 
+*/
+}
+
+@media (max-width: 576px){
+    .navbar ul{
+        background-color: var(red);
+        width: 100%;
+        height: calc(100vh - 110px);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+        transition: all 0.4s ease-out;
+
+    }
+
+    .navbar i{
+        display: block;
+    }
+
+    #toogle-menu:checked + .navbar-list{
+        transform: translateX(0%);
+        transition: all 0.4s ease-in;
+
+    }
+
+}
