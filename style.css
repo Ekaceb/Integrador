@@ -222,6 +222,7 @@ header{
 
 .navbar{
     display: flex;
+    
 }
 
 .navbar i {
@@ -238,6 +239,7 @@ header{
 
 .navbar-list{
     gap: 40px;
+    
 }
 
 .navbar a{
@@ -672,8 +674,12 @@ button{
 }
 
 @media (max-width: 576px){
+.navbar{
+    background: #3A5A40;
+}
+
     .navbar ul{
-        background-color: var(red);
+        background: var(red);
         width: 100%;
         height: calc(100vh - 110px);
         position: absolute;
@@ -695,6 +701,18 @@ button{
         transform: translateX(0%);
         transition: all 0.4s ease-in;
 
+    }
+
+}
+
+@media screen 
+    
+    and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .navbar-list{
+        right: 0;
+        background: var(red);
     }
 
 }
