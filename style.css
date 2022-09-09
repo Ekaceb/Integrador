@@ -27,6 +27,7 @@ html{
 
 body{
    max-width: 1200px;
+   margin-top: 0 auto;
    background-color: rgb(250, 241, 225);
   
 }
@@ -325,7 +326,7 @@ nav img{
     overflow: hidden;
     list-style: none;
     padding: 10px;
-    z-index: 1;
+  
     cursor: pointer;
     transition: filter .2s, -webkit-filter .2s;
 }
@@ -406,7 +407,7 @@ i{
     margin: auto;
     position: relative;
     top: 15px;
-    z-index: 1;
+ 
     filter: drop-shadow(5px 5px 4px rgba(0.7, 0, 0, 0.7));
     transition: all 400ms;
     overflow: hidden; 
