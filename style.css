@@ -720,6 +720,14 @@ button{
     and (max-device-width: 480px)
     and (-webkit-min-device-pixel-ratio: 2){
     
+        header{    
+            width: 100%;
+            height: 110px;
+            z-index: 1;
+            background-color: white;  
+            position: fixed;
+            top: 0;
+           }
         #containerItemsCarrusel{
             width: 100%;
             height: 300px;
@@ -760,10 +768,10 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 5px;
+    font-size: 4px;
     gap: 10px;  
-    margin: 0 30px 0 50px;
-    margin-top: 40px;
+    margin: 0 50px 0 80px;
+    margin-top: 50px;
 }
 
     }
