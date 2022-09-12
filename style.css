@@ -23,95 +23,78 @@
 
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 150px;
 }
 
 body{
-   max-width: 1200px;
-   margin: 0 auto;
-   background-color: rgb(250, 241, 225);
-  
+    width: 100%;
+    background-color: rgb(250, 241, 225);  
 }
 
 .contenedor-link{
-    max-width: 1200px;
+    max-width: 1300px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 20px;
-    gap: 50px;
-    
+    gap: 50px;    
 }
-.contenedor-link:hover{
-    
+
+.contenedor-link:hover{    
     transition : all 0,3s linear;
     opacity: 10;
 }
+
 a{
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     }
 
 .bodyLogin{
    margin: 70px auto;
    display: flex;
    justify-content: center;
-   align-items: center;
-   
+   align-items: center;   
 }
 
 .loginSection {
-
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(./fondologinregistro.webp);
+    background: url(./Fondocomun.jpg);
     background-repeat: no-repeat;  
-    background-size: 100%;
-    border-radius: 15%;
-    
-    
+    background-size: 200%;
+    border-radius: 15%;     
 }
 
 .login {
-    
-  /*  width: 30rem;
-    height: 40rem;*/
     display: flex;
     justify-content: center;
-    align-items: center;
-   
-  
-    
+    align-items: center;      
 }
 
 
-.formLogin {
-  
+.formLogin {  
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: column;
-   
+    flex-direction: column;   
 }
 
 .formLogin a {
     color: black;
 }
+
 .textLogin{
     color: var(--clr6);
-    font-size: 40px;
-    
+    font-size: 40px;    
 }
 
 .loginSection hr{
-  /*  border:none;*/
     height: 10px;
     background-color: black;
 }
-/*.Password{
-    color:black;
-}*/
 
 .loginRecuerdame{
     display: flex;
@@ -120,10 +103,10 @@ a{
     justify-content: center;
     gap: 30%;
 }
+
 .loginCheckbox{
     width: 4rem;
-    height: 5rem;
-    
+    height: 5rem;    
 }
 
 input {
@@ -141,20 +124,21 @@ input {
     text-transform: none;
     text-indent: 0px;
     text-shadow: none;
-
     border: none;
 }
+
 .formLogin :nth-child(3) {
-    color: white;
+    color:  black;
     text-decoration: none;
 }
+
 .button {
     margin: 10px;
-    width: 15rem;
-    padding: 15px;
-    margin-top: 50px;
+    width: 9rem;
+    padding: 5px;
+    margin-top: 10px;
     font-size: 25px;
-    background-color: var(--clr7);
+    background-color: var(--clr4);
     border-radius: 20px;
     border-bottom: 1px solid var(--color4);
     border: none;
@@ -164,17 +148,21 @@ input {
     justify-content: center;
     align-items: center;
 }
-
+.button:hover{
+    background-color: rgb(85, 203, 120);
+    transition : all 0,3s linear;
+    opacity: 10;
+}
 
 button{
-    background-color: var(--clr7);
+    background-color: var(--clr4);
     border: 0px;
     outline: none;
     width: 180px;
     height: 50px;
     color: white;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 20px;
     cursor: pointer;
     transition : all 0,3s linear;
     border-radius: 25px;
@@ -192,8 +180,8 @@ button:hover{
     font-size: 35px;
 }
 
-
-header{    
+header{  
+    margin: 0 auto;  
     width: 100%;
     height: 110px;
     z-index: 1;
@@ -203,21 +191,20 @@ header{
    }
 
 .header-container{
-    max-width: 1200px;
+    max-width: 1300px;
     height: 100%;
     margin-top: 110px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-     
+    position: sticky;     
 }
-.logo-container{
-   
+
+.logo-container{   
     height: 100%;
     margin: auto;
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 .logo-container img{
@@ -225,8 +212,7 @@ header{
 }
 
 .navbar{
-    display: flex;
-    
+    display: flex;    
 }
 
 .navbar i {
@@ -237,8 +223,7 @@ header{
 .navbar, .navbar-list{
     display: flex;
     align-items: center;
-    justify-content: center;
- 
+    justify-content: center; 
 }
 
 .navbar-list{
@@ -257,15 +242,15 @@ header{
     padding: 8px 30px;
     border-radius: 50px;
     transition : all 0,3s linear;
-
 }
 
 .navbar-list li:hover{
     opacity: 0.8;
 }
+
 .navbar-list li:last-child > a:hover{
-    background-color: var(--clr8);
-    color: var(--clr4);
+    background-color: var(--clr4);
+    color: var(--clr1);
     transition : all 0,3s linear;
     font-weight: 800;
     opacity: 10;
@@ -280,25 +265,22 @@ nav img{
     
 }
 .section-carrusel{
-    max-width: 1200px;
+    max-width: 1300px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-  /*  margin: 0 auto;*/
+    align-items: center;  
     padding: 15px 0px ;
-    width: 95%;
-   
-    
-   }
+    width: 95%; 
+}
+
 .itemCarrusel{
     display: flex;
     flex-direction: column;
     align-items: center;
     border: none;
     height: 100%;
-    position: relative;
-    
+    position: relative;    
 }
 
 .cardCarrusel{    
@@ -324,6 +306,7 @@ nav img{
     overflow: hidden;
     margin: 100px 0px -40px 0;
 }
+
 .imgcarrusel{
     width: 700px;
     height: 100%;
@@ -333,15 +316,13 @@ nav img{
     border-radius: 20px;
     overflow: hidden;
     list-style: none;
-    padding: 10px;
-  
+    padding: 10px;  
     cursor: pointer;
     transition: filter .2s, -webkit-filter .2s;
 }
 
 a{
     text-decoration: none;
-
 }
 
 i{
@@ -352,19 +333,17 @@ i{
     text-align: center;
     color: black;
     font-size: 2rem;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%);
- 
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%); 
 }
 
 #productos-card{
-    max-width: 1200px;
+    max-width: 1300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     margin-top: 10px;
 }
-
 
 .section-container-card{
     display: flex;
@@ -373,20 +352,15 @@ i{
     width: 100%;
 }
 
-
 .productos-card-container{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-   /* margin-top: 100px;*/      
-    gap: 70px;
-  /*  height: 100vh;*/
-    
+    align-items: center;      
+    gap: 60px;    
 }
-
 
 .productos-card{
     width: 300px;
@@ -405,8 +379,7 @@ i{
 }
 
 .productos-card:hover{
-    transform: translateY(-1rem);
-                                                                          
+    transform: translateY(-1rem);                                                                          
 }
 
 .productos-card-img{
@@ -414,12 +387,10 @@ i{
     display: block;
     margin: auto;
     position: relative;
-    top: 15px;
- 
+    top: 15px; 
     filter: drop-shadow(5px 5px 4px rgba(0.7, 0, 0, 0.7));
     transition: all 400ms;
-    overflow: hidden; 
-  
+    overflow: hidden;   
     }
 
 .productos-card:hover img{
@@ -429,22 +400,20 @@ i{
 .card-content{
     margin-top: -10px;
     padding: 20px;  
-
 }
+
 .card-content p{
     margin-top: 10px;
-    color:rgb(250, 241, 225);   
-
+    color:rgb(250, 241, 225); 
 }
-
 
 .productos-card span{
     font-weight: 700;
 }
 
 .nosotros{
-    max-width: 1200px;
-    background: url(./fondologinregistro.webp);
+    max-width: 1300px;
+    background: url(./Fondocomun.jpg);
     background-repeat: no-repeat;  
     background-size: 100%;
     border-radius: 20px;
@@ -455,66 +424,55 @@ i{
     align-items: center;
     justify-content: space-between;
     row-gap: 30px;
-    font-size: 20px;
-    
+    font-size: 20px;    
 }
 
-
 .formulario-contacto-container {
-    max-width: 1200px;  
+    max-width: 1300px;  
     margin: 0 300px 0 300px;
     
 }
 .formulario-contacto{ 
-    max-width: 1200px;  
+    max-width: 1300px;  
     width: 100%;
-    background-image: url(./fondologinregistro.webp);
+    background-image: url(./Fondocomun.jpg);
     background-repeat: no-repeat;  
-    background-size: 100%;
+    background-size: 250%;
     flex-direction: column;
     border-radius: 20px;
     font-size: 35px;
-    font-style: 3em;
-    
-    
+    font-style: 3em;      
 }
 
-.formularioContacto{
-    
+.formularioContacto{    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
+
 textarea{
     min-width: 300px;
     min-height: 120px;
-   max-width: 1400px;
-   max-height: 120px;
-  font-size: 25px;
-   border-radius: 25px;
-   
-   
-
+    max-width: 1300px;
+    max-height: 120px;
+    font-size: 25px;
+    border-radius: 25px;
 }
+
 .btn-form{    
     width: 150px;
     height: 50px;
     margin-top: 20px;
     font-size: 20px;
-    background-color: var(--clr7);
+    background-color: var(--clr4);
     border-radius: 25px;
-    border-bottom: 1px solid var(--color4);
     border: none;
     user-select: none;
     cursor: pointer;
     display: flex;
-   align-items: center;
-   justify-content: center;
-
-  
-   
+    align-items: center;
+    justify-content: center;   
 }
 
 .btn-form:hover{
@@ -522,15 +480,16 @@ textarea{
     transition : all 0,3s linear;
     opacity: 10;
 }
+
 .botom-container-formulario{
     padding-bottom: 20px;
 }
+
 footer{
     width: 100%;
     padding: 50px, 0;
-    background-image: url(./Fondofooter.jpg);
-    background-size: cover;
-   
+    background-image: url(./Fondocomun.jpg);
+    background-size: cover;   
 }
 
 .container-footer{
@@ -546,8 +505,8 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 40px;
-
 }
+
 .box-footer img{
     width: 250px;
 }
@@ -565,41 +524,43 @@ footer{
     font-size: 20px;
     font-weight: 600;
     margin-top: 10px;
-
 }
 
 .box-footer a:hover{
     opacity: 0.8;
 }
 
-
 .box-footer h2{
     margin-bottom: 30px;
     font-weight: 700;
 }
+
 .box-footer a .fab{
     font-size: 20px;
 }
 
 .box-copyrigth{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     text-align: center;
     padding: 0px 40px;
 }
+
 .box-copyrigth p{
     margin-top: 20px;
     color: black;
-    }
+}
 
 .box-copyrigth br{
     border:none;
     height: 1px;
     background-color: black;
 }
+
+
 /*Media*/
  
-@media  (max-width: 992px){
+@media  (max-width: 980px){
 
     #containerItemsCarrusel{
         width: 100%;
@@ -613,23 +574,21 @@ footer{
         width: 100px;
     }
 
-.formularioContacto {
-
-    margin: 0 300px 0 300px;
-    background-size: 100%;
-    flex-direction: column;
-    border-radius: 20px;
-    font-size: 20px;
-   
+    .formulario-contacto-container{
+        margin: 0 auto;
+        background-size: 100%;    
+        font-size: 20px;   
+}
+.formularioContacto{
+    font-size: 25px;
 }
 input {
     width: 150px;
-    height: 20px;
+    height: 40px;
     display: flex;
     letter-spacing: normal;
     line-height: normal;
-    font-size: 10px;
-   
+    font-size: 20px;   
 }
 textarea{
     min-width: 50px;
@@ -637,25 +596,21 @@ textarea{
    }
   
 button{
-    width: 50px;
-    height: 20px;
+    width: 140px;
+    height: 30px;
     font-size: 10px;
 }
 .button {
     margin: 10px;
-    width: 80px;
+    width: 50px;
     padding: 5px;
     font-size: 10px;
       
 }
-
-
 }
 
 
-
-
-@media (max-width: 576px){
+@media (max-width: 584px){
 
     
 .navbar-list{
@@ -674,7 +629,6 @@ button{
         justify-content: center;
         transform: translateX(200%);
         transition: all 0.4s ease-out;
-
     }
 
     .navbar i{
@@ -684,38 +638,59 @@ button{
     #toogle-menu:checked + .navbar-list{
         transform: translateX(0%);
         transition: all 0.4s ease-in;
-
     }
 
-    .contenedor-link{
-  
+    .contenedor-link{  
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 5px;
-      
+        font-size: 5px;      
         margin: 0 50px 0 100px;
         margin-top: 110px;
     }
-    #containerItemsCarrusel{
-       
+
+    #containerItemsCarrusel{       
         width: 150%;
         height: 350px;
         overflow: hidden;
     }
-    .formulario-contacto{    
-        width: 100%;
-        background-image: url(./fondologinregistro.webp);
-        background-repeat: no-repeat;  
-        background-size: 100%;
-        flex-direction: column;
-        border-radius: 20px;
-        font-size: 5px;
-        font-style: 3em;
-        
-        
+
+    .formulario-contacto-container{    
+        margin: 0 auto;
+        background-size: 100%;    
+        font-size: 20px;
     }
 
+    .formularioContacto{
+        font-size: 25px;
+    }
+    
+    input {
+        width: 200px;
+        height: 50px;    
+        font-size: 20px;   
+    }
+
+    textarea{
+        min-width: 25px;
+        min-height: 10px; 
+        font-size: 5px;
+   }
+  
+    button{
+        width: 70px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .button {
+        margin: 10px;
+        width: 50px;
+        padding: 5px;
+        font-size: 10px;      
+    }
+}
+/*
 @media screen    
   
     and (min-device-width: 320px) 
@@ -765,15 +740,9 @@ button{
 
     }
 
-.contenedor-link{
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4px;
-    gap: 10px;  
-    margin: 0 50px 0 80px;
-    margin-top: 50px;
-}
+    .nosotros{    
+        font-size: 5px;
+        
+    }
     }
 }
