@@ -672,9 +672,9 @@ button{
     }
 
     textarea{
-        min-width: 25px;
-        min-height: 10px; 
-        font-size: 5px;
+        min-width: 40px;
+        min-height: 25x; 
+        font-size: 15px;
    }
   
     button{
@@ -710,35 +710,7 @@ button{
             height: 400px;
             overflow: hidden;
         }
-    .navbar-list{
-       background: var(--clr8);
-       
-    }
-    
-    .navbar ul{
-        
-        width: 100%;
-        height: calc(100vh - 110px);
-        position: absolute;
-        top: 40px;
-        left: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transform: translateX(200%);
-        transition: all 0.4s ease-out;
-
-    }
-
-    .navbar i{
-        display: block;
-    }
-
-    #toogle-menu:checked + .navbar-list{
-        transform: translateX(0%);
-        transition: all 0.4s ease-in;
-
-    }
+   
 
     .nosotros{    
         font-size: 5px;
