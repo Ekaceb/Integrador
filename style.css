@@ -563,6 +563,10 @@ footer{
  
 @media  (max-width: 980px){
 
+    .header{
+        margin: 0 auto;
+    }
+    
        
 .navbar-list{
     background: url(./Fondocomun.jpg);
@@ -575,7 +579,7 @@ footer{
         width: 100%;
         height: calc(100vh - 110px);
         position: absolute;
-        top: 80px;
+        top: 40px;
         left: 0;
         flex-direction: column;
         align-items: center;
@@ -600,9 +604,6 @@ footer{
    
     }
     
-.header{
-    margin: 0 30px;
-}
 
 .navbar{
    margin: 0 auto
@@ -659,10 +660,7 @@ button{
 
 @media (max-width: 584px){
 
-
-
- 
-    .contenedor-link{  
+   .contenedor-link{  
        
         font-size: 5px;      
         margin: 0 auto;
@@ -674,7 +672,6 @@ button{
     }
 
    #containerItemsCarrusel{ 
-      
         width: 150%;
         height: 350px;
         overflow: hidden;
