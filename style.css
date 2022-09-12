@@ -183,7 +183,7 @@ button:hover{
 header{  
     margin: 0 auto;  
     width: 100%;
-    height: 110px;
+    /*height: 110px;*/
     z-index: 1;
     background-color: white;  
     position: fixed;
@@ -612,8 +612,12 @@ button{
 
 @media (max-width: 584px){
 
-#nav{
-   margin: 50px;
+.header{
+    margin: 0 30px;
+}
+
+.navbar{
+   margin: 0 auto
         
     }
     
@@ -639,21 +643,25 @@ button{
 
     .navbar i{
         display: block;
+        margin: 0 auto
+    }
+
+    #toogle-menu:checked{
+        margin: 0 auto
     }
 
     #toogle-menu:checked + .navbar-list{
         display: flex;
         transform: translateX(0%);
         transition: all 0.4s ease-in;
+   
     }
 
     .contenedor-link{  
-        display: flex;
-        align-items: center;
-        justify-content: center;
+       
         font-size: 5px;      
-        margin: 0 50px 0 100px;
-        margin-top: 110px;
+        margin: 0 auto;
+        margin-top: 20px;
     }
 
     .login{
