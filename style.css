@@ -612,6 +612,10 @@ button{
 
 @media (max-width: 584px){
 
+#nav{
+   margin: 50px;
+        
+    }
     
 .navbar-list{
     background: url(./Fondocomun.jpg);
@@ -656,7 +660,8 @@ button{
         width: 300px;
     }
 
-    #containerItemsCarrusel{       
+   #containerItemsCarrusel{ 
+      
         width: 150%;
         height: 350px;
         overflow: hidden;
@@ -722,5 +727,14 @@ button{
         justify-content: center;
         align-items: center;   
      }
-    
+    }    
+
+
+@media (max-width: 430px){
+    button{
+        width: 50px;
+        height: 20px;
+        font-size: 5px;
+    }
+
 }
