@@ -256,10 +256,6 @@ header{
     opacity: 10;
 }
 
-nav img{
-      display: none;
-}
-
 #toogle-menu{
     display: none;
     
@@ -681,8 +677,8 @@ button{
    }
   
     button{
-        width: 130px;
-        height: 50px;
+        width: 150px;
+        height: 70px;
         font-size: 15px;
     }
 
@@ -691,5 +687,11 @@ button{
         width: 50px;
         padding: 5px;
         font-size: 10px;      
+    }
+    .nosotros{
+        font-size: 10px;
+    }
+    .nosotros img{
+        width: 100px;
     }
 }
