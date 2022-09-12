@@ -688,10 +688,12 @@ button{
         padding: 5px;
         font-size: 10px;      
     }
-    .nosotros{
-        font-size: 10px;
+    
+    .nosotros{     
+        
+        margin: 0 auto;       
+        font-size: 15px;    
     }
-    .nosotros img{
-        width: 100px;
-    }
+    
+    
 }
