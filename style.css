@@ -267,7 +267,7 @@ header{
     flex-direction: column;
     align-items: center;  
     padding: 15px 0px ;
-    width: 95%; 
+    width: 100%; 
 }
 
 .itemCarrusel{
@@ -479,6 +479,10 @@ textarea{
 
 .botom-container-formulario{
     padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 footer{
@@ -648,6 +652,10 @@ button{
         margin-top: 110px;
     }
 
+    .login{
+        width: 300px;
+    }
+
     #containerItemsCarrusel{       
         width: 150%;
         height: 350px;
@@ -664,6 +672,14 @@ button{
         font-size: 25px;
     }
     
+    .botom-container-formulario button{
+        margin: 20px auto;
+        width: 60px;
+        height: 15px;
+        font-size: 10px;
+    }
+
+
     input {
         width: 200px;
         height: 50px;    
@@ -674,13 +690,17 @@ button{
         min-width: 40px;
         min-height: 25x; 
         font-size: 15px;
+        
    }
   
-    button{
-        width: 150px;
-        height: 70px;
-        font-size: 15px;
-    }
+ 
+  
+  .btn-form {
+   
+    width: 90px;
+    height: 25px;
+    font-size: 13px;
+  }
 
     .button {
         margin: 10px;
@@ -695,5 +715,12 @@ button{
         font-size: 15px;    
     }
     
+    .bodyLogin{
+       
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+     }
     
 }
